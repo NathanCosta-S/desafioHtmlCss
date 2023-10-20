@@ -1,0 +1,28 @@
+/* Responsivo para telas menores que 768px */
+@media (max-width: 768px) {
+body{
+  background-image: url('../images/bg-mobile.svg');
+}
+  .about .imagem img {
+    display: block;
+    max-width: 60%;
+  }
+  .about {
+    display: block;
+    align-items: center;
+
+  }
+  .about .info {
+    display: block;
+    text-align: center;
+  }
+  .btn {
+    display: block;
+  }
+  .footer {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+
+  }
+}
