@@ -1,3 +1,5 @@
+
+
 :root {
     --max-width-size: 1920px;
 }
@@ -11,12 +13,14 @@ body {
     grid-template-columns: repeat(2, 1fr);
     background-image: url('../images/bg-desktop.svg') ;
     background-size: cover;
-    background-attachment: fixed;
+    width: 100%;
+
 }
 
 .header {
     grid-area: header;
-    margin: 30px;
+    margin: 30px 100px;
+    
 
 }
 
@@ -39,58 +43,69 @@ body {
     align-items: center;
     max-width: 100%;
     height: auto;
+    padding-left: 100px;
 }
 
 .about .info {
-    padding: 20%;
+    padding: 17%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-content: center;
     color: white;
+    width: 800px;
+    line-height: 60px;
 }
 
 .about .info h1 {
     padding-bottom: 16px;
-    font-size: 30px;
+    font-size: 45px;
+    font-weight: 600;
 }
 
 .about .info p {
     margin-bottom: 16px;
     line-height: 20px;
-    font-size: 14px;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 27px;
 }
 
 .about .btn {
     align-self: flex-start;
     background-color: white;
     color: #674bb0;
-    padding: 10px 40px;
-    border-radius: 20px;
+    padding: 0 70px;
+    border-radius: 30px;
     transition: 0.4s;
+    font-weight: 400;
+    font-size: 20px;
 }
 
 .about .btn:hover {
     background-color: #E980E7;
     color: white;
+    box-shadow: 1.5px 1.5px rgb(64, 63, 63);
 }
 
-.footer {
+.footer{
     grid-area: footer;
     display: flex;
-    justify-content: end;
-    margin-right: 25px;
+    justify-content: flex-end;
+    margin-right: 15%;
 
 }
 
-.footer .social a i {
-    margin: 12px;
-    transition: 0.3s;
-    color: white;
 
 
+.footer .social a i{
+margin: 12px;
+color: white;
+transition: 0.3s;
 }
 
-.footer .social i:hover {
+.footer .social a i:hover {
     color: #E980E7;
+    box-shadow: 1.5px 1.5px rgb(64, 63, 63);
+    border-radius: 20px;
 }

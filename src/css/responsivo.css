@@ -1,24 +1,46 @@
 /* Responsivo para telas menores que 768px */
 @media (max-width: 768px) {
-body{
-  background-image: url('../images/bg-mobile.svg');
-}
+  body {
+    background-image: url('../images/bg-mobile.svg');
+    background-size: cover;
+    
+  }
+
   .about .imagem img {
     display: block;
-    max-width: 60%;
+    max-width: 50%;
+    margin-right: 20%;
+    padding-top: 20px;
   }
+
   .about {
     display: block;
     align-items: center;
-
+   
   }
+
   .about .info {
     display: block;
     text-align: center;
+    
   }
+
   .btn {
     display: block;
+    width: 200px;
+    margin-left: 27%;
   }
+
+  .footer {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+
+  }
+
+
+}
+@media (max-width: 425px){
   .footer {
     text-align: center;
     display: flex;
@@ -26,3 +48,9 @@ body{
 
   }
 }
+
+
+
+
+
+
